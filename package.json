@@ -1,0 +1,26 @@
+{
+  "name": "ruscioweb",
+  "version": "1.0.0",
+  "description": "Website for ruscio court site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch" : "harp server & browser-sync start --proxy 'localhost:9000' --files 'public/**/*.jade, public/**/*.md, public/**/*.scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwickett/ruscio.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Michael Wickett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwickett/ruscio/issues"
+  },
+  "homepage": "https://github.com/mwickett/ruscio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0"
+  }
+}
