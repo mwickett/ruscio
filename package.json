@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch" : "harp server & browser-sync start --proxy 'localhost:9000' --files 'public/**/*.jade, public/**/*.md, public/**/*.scss'"
+    "watch": "harp server & browser-sync start --proxy 'localhost:9000' --files 'public/**/*.jade, public/**/*.md, public/**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/mwickett/ruscio#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0"
+  },
+  "dependencies": {
+    "harp": "^0.20.3"
   }
 }
