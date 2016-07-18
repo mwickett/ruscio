@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/mwickett/ruscio#readme",
   "devDependencies": {
-    "browser-sync": "^2.13.0"
+    "browser-sync": "^2.13.0",
+    "modularscale-sass": "^2.1.1"
   },
   "dependencies": {
     "harp": "^0.20.3"

@@ -1,0 +1,59 @@
+//===========================================================
+// Header module
+//===========================================================
+
+#header {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  border: $header-border;
+}
+
+.hero {
+  background: no-repeat url("../assets/header.png");
+  background-size: cover;
+  width: 70vw;
+  display: flex;
+  border-right: $header-border;
+}
+
+.header {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  .logo {
+    margin: 20px;
+  }
+  .phone {
+    color: white;
+    font-size: 1.3em;
+    margin: 20px;
+  }
+}
+
+nav {
+  width: 30vw;
+  color: white;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.navitem {
+  height: 33.333333%;
+  background: no-repeat rgba(0,0,0,0.8);
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-bottom: $header-border;
+  p {
+    margin: 0 auto;
+    align-self: center;
+  }
+  &:last-child {
+    border: none;
+  }
+}

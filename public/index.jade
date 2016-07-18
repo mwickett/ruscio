@@ -1,2 +1,14 @@
-h1 Ruscio Court
-h3 Welcome to Ruscio Court
+section#header
+  div.hero
+    div.header
+      span.logo
+        img(src="assets/logo.png")
+      span.phone
+        p #{phone}
+  nav
+    for nav in public._data.nav
+      div.navitem(style="background-image:url('#{nav.img}');")
+        //img(src="#{nav.img}")
+        p= nav.name
+section#callout
+  p= public._data.callout

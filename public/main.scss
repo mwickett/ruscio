@@ -1,3 +1,13 @@
-@import "_scss/reset";
+// Utility
+@import "_scss/_utility/reset";
+
+// Variables
 @import "_scss/variables";
-@import "_scss/global";
+
+//Globals
+@import "_scss/_typography/typography";
+@import "_scss/_global/global";
+
+//Modules
+@import "_scss/_modules/header";
+@import "_scss/_modules/callout";
