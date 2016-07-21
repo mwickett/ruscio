@@ -36,7 +36,16 @@
 
 nav {
   width: 30vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 100%
   a {
+    flex: 1 1 auto;
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
     color: white;
     font-size: 1.4em;
     font-weight: 400;
@@ -44,23 +53,19 @@ nav {
     border-bottom: $header-border;
     height: 33.333333%;
     background: blue;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-
     &:last-child {
       border: none;
     }
   }
 }
 
-.navitem {
-  height: 100%;
-  background-size: cover;
-  display: flex;
+// .navitem {
+//   height: 100%;
+//   background-size: cover;
+//   display: flex;
 
-  p {
-    margin: 0 auto;
-    align-self: center;
-  }
-}
+//   p {
+//     margin: 0 auto;
+//     align-self: center;
+//   }
+// }

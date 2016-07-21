@@ -7,8 +7,8 @@ section#header
         p #{phone}
   nav
     for nav in public._data.nav
-      a(href='#{nav.link}')
-        div.navitem(style="background-image:url('#{nav.img}');")
+      a(href='#{nav.link}', style='background-image:url('#{nav.img}');')= nav.name
+        //div.navitem(style="background-image:url('#{nav.img}');")
           p= nav.name
 section#callout
   p= public._data.callout
