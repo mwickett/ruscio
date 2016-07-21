@@ -1,14 +1,8 @@
-section#header
-  div.hero
-    div.header
-      span.logo
-        img(src="assets/logo.png")
-      span.phone
-        p #{phone}
-  nav
+section.banner.banner--feature
+  img.logo(src="assets/logo.png")
+  span.phone #{phone}
+  nav.main-nav
     for nav in public._data.nav
-      a(href='#{nav.link}', style='background-image:url('#{nav.img}');')= nav.name
-        //div.navitem(style="background-image:url('#{nav.img}');")
-          p= nav.name
-section#callout
-  p= public._data.callout
+      a.btn(href='#{nav.link}')=nav.name
+div.callout
+  h3.callout--title Ruscio court is awesome

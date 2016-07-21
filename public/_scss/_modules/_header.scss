@@ -2,70 +2,44 @@
 // Header module
 //===========================================================
 
-#header {
-  height: 50vh;
-  width: 100%;
+.banner {
   display: flex;
-  border: $header-border;
+  background: $primary;
+  position: relative;
+  align-items: center;
+  height: 30vh;
 }
 
-.hero {
-  background: no-repeat url("../assets/header.png");
-  background-size: cover;
-  width: 70vw;
-  display: flex;
-  border-right: $header-border;
-}
-
-.header {
-  height: 30%;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+.banner--feature {
+  flex-direction: column;
+  height: auto;
   .logo {
-    margin: 20px;
+    flex: 0 1 auto;
+    padding: 2rem;
   }
   .phone {
     color: white;
-    font-size: 1.3em;
-    margin: 20px;
-  }
-}
-
-nav {
-  width: 30vw;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-  height: 100%
-  a {
-    flex: 1 1 auto;
-    align-self: center;
-    width: 100%;
-    margin: 0 auto;
-    background-size: cover;
-    color: white;
-    font-size: 1.4em;
-    font-weight: 400;
-    text-decoration: none;
-    border-bottom: $header-border;
-    height: 33.333333%;
-    background: blue;
-    &:last-child {
-      border: none;
+    padding: 0.5rem;
+    &:before {
+      content: "X"
     }
   }
 }
 
-// .navitem {
-//   height: 100%;
-//   background-size: cover;
-//   display: flex;
+.main-nav {
+  width: 100%;
+}
 
-//   p {
-//     margin: 0 auto;
-//     align-self: center;
-//   }
-// }
+.btn {
+  position: relative;
+  padding: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.2s ease;
+}
+
+.main-nav .btn {
+  display: block;
+  margin: 0;
+}

@@ -1,0 +1,14 @@
+section#header
+  div.hero
+    div.header
+      span.logo
+        img(src="assets/logo.png")
+      span.phone
+        p #{phone}
+  nav
+    for nav in public._data.nav
+      a(href='#{nav.link}')
+        div.navitem(style="background-image:url('#{nav.img}');")
+          p= nav.name
+section#callout
+  h3= public._data.callout
