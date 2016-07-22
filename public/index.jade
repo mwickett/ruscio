@@ -1,8 +1,17 @@
-section.banner.banner--feature
-  img.logo(src="assets/logo.png")
-  span.phone #{phone}
+section.banner
+  div.hero
+    div.header
+      span.logo
+        img(src="assets/logo.png")
+      span.phone
+        p #{phone}
   nav.main-nav
     for nav in public._data.nav
       a.btn(href='#{nav.link}')=nav.name
 div.callout
-  h3.callout--title Ruscio court is awesome
+  h1.callout--title Ruscio court is awesome
+section
+  h2 Welcome home
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut arcu justo, et convallis lectus. Sed commodo massa eget risus feugiat suscipit. Nulla velit lectus, imperdiet cursus tempor at, adipiscing sit amet nisi. Aliquam vitae egestas erat. Aliquam erat volutpat. Aliquam iaculis facilisis elit, sed vulputate sem cursus ut. Morbi elit lacus, varius at porttitor nec, gravida in sapien. Aliquam erat volutpat. Nulla ut lorem libero, in lacinia velit.
+
+

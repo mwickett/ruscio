@@ -3,17 +3,17 @@
       {
         "name" : "About",
         "img" : "assets/header.png",
-        "link" : "http://google.ca"
+        "link" : "about"
       },
       {
         "name" : "Ammenities",
         "img" : "/assets/header.png",
-        "link" : "http://bing.ca"
+        "link" : "ammenities"
       },
       {
         "name" : "Contact",
         "img" : "/assets/header.png",
-        "link" : "http://wickett.ca"
+        "link" : "contact"
       }
     ],
   "callout" : "Ruscio Court is a dope place to call home.",
