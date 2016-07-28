@@ -2,6 +2,10 @@
 // Header module
 //===========================================================
 
+//Repeated styles
+
+$header-border: solid white 6px;
+
 .banner {
   display: flex;
   flex-direction: column;
@@ -18,12 +22,15 @@
 }
 
 .hero {
-  //@include respond-to('large') {
     width: 100%;
     height: 100%;
     background: no-repeat url('assets/header.png');
     background-size: cover;
-  //}
+    border-bottom: $header-border;
+
+    @include respond-to('large') {
+      border-right: $header-border;
+    }
 }
 
 .header {
@@ -62,6 +69,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-bottom: $header-border;
     }
   }
   @include respond-to('large') {
@@ -71,16 +79,19 @@
     align-self: flex-end;
     margin-top: 0;
     .btn {
-      background-size: cover;
       &:nth-of-type(1) {
         background: no-repeat url('assets/header.png');
+        background-size: cover;
       }
       &:nth-of-type(2) {
         background: no-repeat url('assets/header.png');
+        background-size: cover;
       }
       &:nth-of-type(3) {
         background: no-repeat url('assets/header.png');
+        background-size: cover;
       }
+
     }
   }
 }
