@@ -45,12 +45,10 @@ $header-border: solid white 6px;
       content: "X "
     }
   }
-  //@include respond-to('large') {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
-  //}
 }
 
 .main-nav {
