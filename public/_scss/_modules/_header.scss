@@ -34,6 +34,10 @@ $header-border: solid white 6px;
 }
 
 .header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
   .logo {
     flex: 0 1 auto;
     padding: 2rem;
@@ -41,18 +45,15 @@ $header-border: solid white 6px;
   .phone {
     color: white;
     padding: 0.5rem;
-    &:before {
-      content: "X ";
+    &::before {
+      content: 'X ';
     }
   }
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
 }
 
 .main-nav {
   width: 100%;
+  border-bottom: $header-border;
   .btn {
     display: block;
     margin: 0;
@@ -61,13 +62,12 @@ $header-border: solid white 6px;
     width: 100%;
     display: flex;
     height: 15vh;
-  .btn {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-bottom: $header-border;
+    .btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
   @include respond-to('large') {
@@ -76,7 +76,9 @@ $header-border: solid white 6px;
     height: 100%;
     align-self: flex-end;
     margin-top: 0;
+    border-bottom: none;
     .btn {
+        border-bottom: $header-border;
       &:nth-of-type(1) {
         background: no-repeat url('assets/header.png');
         background-size: cover;
@@ -102,7 +104,7 @@ $header-border: solid white 6px;
   font-size: 1.5rem;
   transition: all 0.3s ease;
   height: 100%;
-  &:hover {
+  &::hover {
     background: lighten($primary, 10%);
   }
 }

@@ -11,7 +11,13 @@
   align-items: center;
   h1 {
     color: white;
-    font-size: 2em;
+    font-size: 9vw;
     font-weight: 600;
+  }
+
+  @include respond-to('small') {
+    h1 {
+      font-size: 2em;
+    }
   }
 }
