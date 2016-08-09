@@ -5,6 +5,7 @@
 //Repeated styles
 
 $header-border: solid white 6px;
+$transition: all 0.4s ease-in-out;
 
 .banner {
   display: flex;
@@ -44,10 +45,7 @@ $header-border: solid white 6px;
   }
   .phone {
     color: white;
-    padding: 0.5rem;
-    &::before {
-      content: 'X ';
-    }
+    padding: 2em;
   }
 }
 
@@ -57,6 +55,9 @@ $header-border: solid white 6px;
   .btn {
     display: block;
     margin: 0;
+    &:hover {
+      opacity: 0.5;
+    }    
   }
   @include respond-to('small') {
     width: 100%;
@@ -78,7 +79,7 @@ $header-border: solid white 6px;
     margin-top: 0;
     border-bottom: none;
     .btn {
-        border-bottom: $header-border;
+      border-bottom: $header-border;
       &:nth-of-type(1) {
         background: no-repeat url('assets/header.png');
         background-size: cover;
@@ -91,7 +92,6 @@ $header-border: solid white 6px;
         background: no-repeat url('assets/header.png');
         background-size: cover;
       }
-
     }
   }
 }
@@ -102,11 +102,8 @@ $header-border: solid white 6px;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
-  transition: all 0.3s ease;
+  transition: $transition;
   height: 100%;
-  &::hover {
-    background: lighten($primary, 10%);
-  }
 }
 
 

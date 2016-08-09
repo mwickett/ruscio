@@ -4,16 +4,18 @@ section.banner
       span.logo
         img(src="assets/logo.png")
       span.phone
-        p #{phone}
+        //p #{phone}
+        include ./assets/phone.svg
   nav.main-nav
     for nav in public._data.nav
       a.btn(href='#{nav.link}')=nav.name
 div.callout
   h1.callout--title Ruscio court is awesome
-section
-  h2 #{public._data.intro.header}
-  p #{public._data.intro.body}
-  div.map-embed
+section.main-content
+  div.left
+    h2 #{public._data.intro.header}
+    p #{public._data.intro.body}
+  div.right
     != public._data.map_embed
 
 include ./_footer.jade
