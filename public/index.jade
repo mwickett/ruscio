@@ -2,9 +2,8 @@ section.banner
   div.hero
     div.header
       span.logo
-        img(src="assets/logo.png")
+        include ./assets/logo.svg
       span.phone
-        //p #{phone}
         include ./assets/phone.svg
   nav.main-nav
     for nav in public._data.nav
